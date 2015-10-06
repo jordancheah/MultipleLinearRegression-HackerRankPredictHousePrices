@@ -4,31 +4,6 @@
 Predict house prices in R, Python, Octave/Matlab using Multiple Linear Regression
 https://www.hackerrank.com/challenges/predicting-house-prices
 
-## OUTPUT
-```
-$ chmod 755 HackerRankHousePrices.m
-$ which octave
-/usr/bin/octave
-$ ./HackerRankHousePrices.m < HackerRankHousePrices-Input.txt
-  105.21
-  142.67
-  132.94
-  129.70
-
-$ Rscript HackerRankHousePrices.R < HackerRankHousePrices-Input.txt
-3
-105.134
-143.4332
-133.4505
-129.5912
-
-$ python HackerRankHousePrices.py < HackerRankHousePrices-Input.txt
-105.214558351
-142.670951307
-132.936054691
-129.701754045
-```
-
 ## The Problem
 Charlie wants to buy a house. He does a detailed survey of the houses in the area, and tries to quantify a lot of factors, such as the distance of the houses from commercial areas, schools and workplaces; the reputation of the construction companies and builders involved in constructing the apartments; the distance of the houses from highways, freeways and important roads; the size of the house; the facilities offered by the complex, and so on.
 Each of these factors are quantified, normalized and mapped to values on a scale of 0 to 1. Charlie then makes a table. Each row in the table corresponds to Charlie's observations for a particular house. If Charlie has observed and noted F features, the row contains F comma separated values, followed by the house price in dollars per square foot at the end. If Charlie makes observations for H houses, his observation table has (F+1) columns and H rows, and a total of (F+1) * H entries.
@@ -80,4 +55,34 @@ T lines. Each line i contains the predicted price for the ith test case.
 ```
 
 
+## Actual Output (Octave/Matlab)
+```
+$ chmod 755 HackerRankHousePrices.m
+$ which octave
+/usr/bin/octave
+$ ./HackerRankHousePrices.m < HackerRankHousePrices-Input.txt
+  105.21
+  142.67
+  132.94
+  129.70
+```
+
+## Actual Output (Python 3.x Anaconda)
+```
+$ python HackerRankHousePrices.py < HackerRankHousePrices-Input.txt
+105.214558351
+142.670951307
+132.936054691
+129.701754045
+```
+
+## Actual Output (R)
+```
+$ Rscript HackerRankHousePrices.R < HackerRankHousePrices-Input.txt
+3
+105.134
+143.4332
+133.4505
+129.5912
+```
 
